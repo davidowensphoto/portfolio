@@ -1,0 +1,145 @@
+/*/// <reference path="./variables.scss" />*/
+body {
+  background-image: url("/Content/images/topo.svg");
+  background-position: top;
+}
+
+.cat-block {
+  width: 150px;
+  height: 330px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+@media (min-width: 730px) {
+  .cat-block {
+    width: 340px;
+    height: 720px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1200px) {
+  .cat-block {
+    width: 390px;
+    height: 720px;
+  }
+}
+
+.cat-images {
+  display: block;
+  height: 233px;
+  width: 140px;
+  margin: auto;
+}
+@media (min-width: 730px) {
+  .cat-images {
+    height: 532px;
+    width: 320px;
+    margin: auto;
+  }
+}
+
+.header {
+  display: block;
+  background-color: #F05A27;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  min-width: 320px;
+}
+@media (min-width: 730px) {
+  .header {
+    height: 70px;
+  }
+}
+
+.l-category-content {
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 730px) {
+  .l-category-content {
+    max-width: 900px;
+  }
+}
+
+.l-cat {
+  margin: auto;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+@media (min-width: 600px) {
+  .l-cat {
+    max-width: 480px;
+  }
+}
+@media (min-width: 730px) {
+  .l-cat {
+    max-width: 700px;
+    gap: 8px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .l-cat {
+    max-width: 1200px;
+  }
+}
+
+.l-cat-price {
+  display: block;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.l-cat-body {
+  margin-bottom: 12px;
+}
+
+.sub-h-align {
+  text-align: center;
+  margin: auto;
+  line-height: 0.8;
+}
+
+.text-category-h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #000000;
+}
+@media (min-width: 730px) {
+  .text-category-h2 {
+    font-size: 75px;
+  }
+}
+
+.text-pricing {
+  font-size: 25px;
+  font-weight: 600;
+  color: #F05A27;
+}
+@media (min-width: 730px) {
+  .text-pricing {
+    font-size: 50px;
+  }
+}
+
+.text-category-h1 {
+  font-size: 35px;
+}
+@media (min-width: 730px) {
+  .text-category-h1 {
+    font-size: 50px;
+    padding-top: 10px;
+  }
+}
+
+/*@import "partials/variables";*/
+/*# sourceMappingURL=maps/category.css.map */

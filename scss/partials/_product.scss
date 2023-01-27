@@ -1,0 +1,354 @@
+﻿@import 'variables';
+
+.btn-atc {
+    display: block;
+    background-color: $primarycolor;
+    padding: 2px 8px;
+    text-align: center;
+    width: 225px;
+    margin-top: 18px;
+    border-radius: 25px;
+    margin: auto;
+    border: none;
+
+    @media (min-width: 730px) {
+        margin: 0;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+
+.btn-instruct {
+    display: block;
+    background-color: $primarycolor;
+    padding: 8px 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 12px;
+    border-radius: 25px;
+    margin: auto;
+    cursor: pointer;
+    line-height: 1;
+}
+
+dt {
+    font-size: 25px;
+}
+
+dd {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+
+    @media (min-width: 730px) {
+        font-size: 24px;
+    }
+}
+
+.five-star {
+    margin-top: 12px;
+}
+
+.hero-display {
+    display: none;
+
+    @media (min-width: 730px) {
+        display: block;
+        margin: auto;
+    }
+}
+
+.hero-image-1 {
+    display: none;
+
+    @media (min-width: 730px) {
+        display: block;
+        height: 400px;
+        width: 300px;
+        margin: auto;
+    }
+}
+
+.hero-image-2, .hero-image-3, .hero-image-4 {
+    display: none;
+
+    @media (min-width: 730px) {
+        display: none;
+        height: 400px;
+        width: 300px;
+        margin: auto;
+    }
+}
+
+.hero-pricing {
+
+
+    @media (min-width: 730px) {
+        width: 50%;
+        padding: 15px 30px;
+    }
+}
+
+.image-transparent-1 {
+    @media (min-width: 730px) {
+        opacity: 0.5;
+    }
+}
+
+.l-breadcrumb {
+    display: inline;
+}
+
+.l-hero-desktop {
+    display: block;
+
+    @media (min-width: 730px) {
+        display: flex;
+        max-width: 800px;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.l-prod-info {
+    padding: 12px;
+    margin-top: 12px;
+
+    @media (min-width: 730px) {
+        margin: auto;
+        max-width: 680px;
+    }
+
+    h2, h3, dt {
+        margin-top: 18px;
+
+        @media (min-width: 730px) {
+            margin-top: 25px;
+        }
+        }
+    }
+
+
+    .nav-breadcrumb {
+        display: block;
+        margin-top: 10px;
+        padding-left: 8px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+
+        @media (min-width: 730px) {
+            font-size: 24px;
+        }
+    }
+
+    .product-image {
+        width: 225px;
+        height: 300px;
+
+        @media (min-width: 730px) {
+            width: 56px;
+            height: 75px;
+            border: solid;
+            border-color: $primarycolor;
+        }
+    }
+
+    .product-swipe-icon {
+        width: 60px;
+        height: 60px;
+        margin: 50px 10px;
+
+        @media (min-width: 730px) {
+            display: none;
+        }
+    }
+
+    .product-carousel {
+        display: flex;
+        overflow-x: auto;
+        background-color: $primarycolor;
+        width: 100%;
+        height: 310px;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 5px;
+
+        @media (min-width: 730px) {
+            display: none;
+        }
+
+        &-large {
+            display: none;
+
+            @media (min-width: 730px) {
+                display: flex;
+                height: 100px;
+                width: 400px;
+                justify-content: center;
+                align-content: center;
+                background-color: $backgroundwhite;
+                margin-top: 20px;
+                gap: 8px;
+            }
+        }
+    }
+
+    .text-breadcrumb {
+        font-size: 30px;
+    }
+
+    .text-prod-title {
+        text-align: center;
+        font-size: 70px;
+        line-height: .8;
+        padding: 8px;
+    }
+
+    .text-prod-price {
+        display: block;
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+
+        @media (min-width: 730px) {
+            text-align: left;
+            margin-top: 20px;
+        }
+    }
+
+    .text-prod-callout {
+        font-size: 30px;
+        margin-top: 10px;
+        line-height: 1;
+        color: $primarycolor;
+
+        @media (min-width: 730px) {
+            display: none;
+        }
+    }
+
+    .text-hero-callout {
+        display: none;
+
+        @media (min-width: 730px) {
+            display: block;
+            color: $thirdcolor;
+            font-size: 40px;
+            line-height: 1;
+        }
+    }
+
+.text-modal-cart {
+    display: block;
+    font-size: 35px;
+    font-weight: 600;
+    color: $complimentary;
+    line-height: 1;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+    &-content {
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $backgroundwhite;
+        padding: 20px 12px;
+        width: 95%;
+        border-radius: 4px;
+
+        @media (min-width: 620px) {
+            width: 60%;
+            padding: 20px 20px 30px;
+        }
+    }
+}
+
+    .l-modal-btns {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+.close-button {
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+    width: 30%;
+    max-width: 160px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: $primarycolor;
+    color: $backgroundwhite;
+    padding: 0 10px;
+    letter-spacing: .5px;
+
+    @media (min-width: 620px) {
+        font-size: 30px;
+    }
+
+    &:hover {
+        background-color: $textentrygray;
+    }
+
+    &:focus {
+        border-color: $complimentary;
+    }
+}
+
+.shopping-button {
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+    width: 60%;
+    max-width: 320px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: $backgroundwhite;
+    color: $complimentary;
+    padding: 0 8px;
+    border: 2px solid $complimentary;
+
+    @media (min-width: 620px) {
+        font-size: 30px;
+    }
+
+    &:hover {
+        background-color: $textentrygray;
+    }
+
+    &:focus {
+        border-color: $primarycolor;
+    }
+}
+
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Content/css/utilities.css">
+    <link rel="stylesheet" href="/Content/css/styles.css">
+
+    <title>Product Page</title>
+
+    
+    <link rel="stylesheet" href="/Content/css/product.css">
+
+</head>
+<body>
+    <header class="header-width bg-black header-position">
+        <div class="l-header">
+            <div class="hamburger-menu-icons">
+                <a class="hamburger-menu-icon" id="hamburger-open"> <img src="/Content/images/hamburger-white.svg" height="35" width="35" alt="Home" /></a>
+                <a class="hamburger-menu-close-icon" id="hamburger-close"> <img src="/Content/images/x-white.svg" height="28" width="28" alt="Home" /></a>
+            </div>
+            <div>
+                <a href="home"> <img class="header-logo" src="/Content/images/survival-pack-orange-white-logo.svg" height="45" width="175" alt="Home" /></a>
+            </div>
+            <div class="flex align-items-center header-icon-spacing">
+                <div class="flex align-items-center align-self-center">
+                    <label for="search" aria-label="Search">
+                        <input class="header-search-entry text-form-entry" value="Search" type="text" id="search" name="search">
+                    </label>
+
+                    <a href="home" class="header-search"><img src="/Content/images/search-white.svg" height="35" width="35" alt="Search Site" /></a>
+                </div>
+                <a href="/Cart" class="shopping-cart"><img src="/Content/images/cart-icon-white.svg" height="35" width="35" alt="Shopping Cart" />1</a>
+            </div>
+        </div>
+        <nav class="nav-menu nav-menu-hide" id="nav-hamburger" aria-label="primary">
+            <ul class="nav-menu-desktop">
+                <li><a href="/Category">Backpacks</a></li>
+                <li><a href="/Category">Fannypacks</a></li>
+                <li><a href="/Category">Tactipacks</a></li>
+                <li><a href="#">Belts</a></li>
+                <li><a href="#">Our Tech</a></li>
+                <li><a href="#">Warranty</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+
+
+
+<nav class="nav-breadcrumb text-breadcrumb" aria-label="breadcrumb">
+    <ul>
+        <li class="l-breadcrumb">
+            <a href="Category">Backpacks /</a>
+        </li>
+        <li class="l-breadcrumb text-primary">
+            Choco Rocko
+        </li>
+    </ul>
+</nav>
+
+<h1 class="text-prod-title">CHOCO ROCKO</h1>
+<div class="l-hero-desktop">
+    <div>
+        <div class="hero-display">
+            <img id="hero-1" class="hero-image-1" src="/Content/images/1-choco-rocko.png" alt="Choco Rocko 1" width="375" height="500" />
+            <img id="hero-2" class="hero-image-2" src="/Content/images/1-choco-rocko-2.png" alt="Choco Rocko 2" width="375" height="500" />
+            <img id="hero-3" class="hero-image-3" src="/Content/images/1-choco-rocko-3.png" alt="Choco Rocko 3" width="375" height="500" />
+            <img id="hero-4" class="hero-image-4" src="/Content/images/1-choco-rocko-4.png" alt="Choco Rocko 4" width="375" height="500" />
+
+        </div>
+        <div class="product-carousel" tabindex=0>
+            <img class="product-swipe-icon" src="/Content/images/finger-swipe-right.svg" alt="Swipe Icon" width="250" height="250" />
+            <img class="product-image image-transparent-1" src="/Content/images/1-choco-rocko.png" alt="Choco Rocko 1" width="375" height="500" />
+            <img class="product-image" src="/Content/images/1-choco-rocko-2.png" alt="Choco Rocko 2" width="375" height="500" />
+            <img class="product-image" src="/Content/images/1-choco-rocko-3.png" alt="Choco Rocko 3" width="375" height="500" />
+            <img class="product-image" src="/Content/images/1-choco-rocko-4.png" alt="Choco Rocko 4" width="375" height="500" />
+        </div>
+        <div class="product-carousel-large" tabindex=0>
+            <img class="product-swipe-icon" src="/Content/images/finger-swipe.svg" alt="Swipe Icon" width="250" height="250" />
+            <img id="ht-1" class="product-image image-transparent-1" src="/Content/images/1-choco-rocko.png" alt="Choco Rocko 1" width="375" height="500" />
+            <img id="ht-2" class="product-image" src="/Content/images/1-choco-rocko-2.png" alt="Choco Rocko 2" width="375" height="500" />
+            <img id="ht-3" class="product-image" src="/Content/images/1-choco-rocko-3.png" alt="Choco Rocko 3" width="375" height="500" />
+            <img id="ht-4" class="product-image" src="/Content/images/1-choco-rocko-4.png" alt="Choco Rocko 4" width="375" height="500" />
+            <img class="product-swipe-icon" src="/Content/images/finger-swipe.svg" alt="Swipe Icon" width="250" height="250" />
+        </div>
+    </div>
+    <div class="hero-pricing">
+        <p class="text-primary text-hero-callout">The pack to grab for a short or multi-day through-hike.</p>
+        <p class="text-primary text-hero-callout">Choco Rocko tastes like your favorite chocolate cereal you remember as a&nbsp;kid. <br />You'll go&nbsp;cuckoo!  </p>
+        <span class="text-prod-price">$250.00</span>
+
+        <button class="text-btn btn-atc trigger" href="Cart">ADD TO CART</button>
+        <div class="modal">
+            <div class="modal-content">
+
+                <span class="text-modal-cart">Choco Rocko has been added to your&nbsp;cart.</span>
+                <div class="l-modal-btns" >
+                    <a tabindex="0" href="Cart" class="close-button">Go to Cart</a>
+                    <a tabindex="0" href="Product" class="shopping-button">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="l-prod-info">
+
+    <section >
+        <h2 class="text-black border-grey-dark border-bottom">DESCRIPTION</h2>
+
+        <p class="text-prod-callout">Choco Rocko tastes like your favorite chocolate cereal you remember as a kid. You'll go cuckoo!  </p>
+        <p>
+            Ensure your survival and never run out of food with our
+            patented edible survival vitamin and caloric-packed
+            material. Follow special instructions for activation.
+            Made of durable fabric, giving you a long-lasting use in
+            the harshest weather environments. Keep your
+            essentials close with accommodation for clip-style
+            holster, drop-down rifle pocket and hydration pocket
+            and port.
+            <br />
+            <span>
+                Total Weight: 7 lbs. 5 oz., Bag Weight: 2 lbs. 3 oz., Size:
+                5250 cubic inches/86L
+            </span>
+        </p>
+    </section>
+    <section>
+        <h2 class="text-black border-grey-dark border-bottom">FEATURES & SPECS</h2>
+        <ul>
+            <li>
+                <h3 class="text-primary">Capacity</h3>
+                <p>With a 5250 in³ main compartment, spin-drift collar top, lashing loops and multiple exterior pockets, the Commander Pack has ample room for your essential gear.</p>
+            </li>
+            <li>
+                <h3 class="text-primary">Spotting Scope Pocket</h3>
+                <p>
+                    Spotting Scopes are essential for long distant hunts, keep yours secure in the 16”x 6”x 2.5” side pocket.
+                </p>
+            </li>
+            <li>
+                <h3 class="text-primary">
+                    Drop-Down Rifle Holder
+                </h3>
+                <p>
+                    Whether packing in or out, keep your hands free and your rifle close using the Drop-Down Rifle Holder.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="text-black border-grey-dark border-bottom">TECHNICAL DETAILS</h2>
+        <dl>
+            <dt class="text-primary">Package Dimensions</dt>
+            <dd>39.7 x 17.9 x 8.5 inches (LxWxH)</dd>
+
+            <dt class="text-primary">Package Weight:</dt>
+            <dd>5.01 Kilograms</dd>
+            <dt class="text-primary">Item Weight: </dt>
+            <dd>7.3 Pounds</dd>
+
+            <dt class="text-primary">Part Number:</dt>
+            <dd>10000CR</dd>
+        </dl>
+        <div>
+            <h3 class="text-black text-center">How do you eat your pack?</h3>
+            <a class="text-btn btn-instruct " href="Product">Edible Activation Instructions</a>
+        </div>
+    </section>
+    <section>
+        <h2 class="text-black border-grey-dark border-bottom">REVIEWS</h2>
+        <div>
+            <img class="five-star" src="/Content/images/five-star.svg" alt="five-star" width="200" height="34" />
+            <h3 class="text-black">"Best pack I've owned, plus I feel safer knowing I have an emergency food source built in."</h3>
+            <p>
+                Ben Safer <br />
+                Whereami , MO
+            </p>
+        </div>
+    </section>
+</div>
+<script src="/Content/js/hero-image.js"></script>
+<script src="/Content/js/atc.js"></script>
+
+
+
+
+
+
+        <div id="overlay"></div>
+    </main>
+
+    <footer class="bg-grey-x-light l-footer-space">
+        <div class=" footer-align l-footer">
+            <div class="l-footer-expanded">
+                <div>
+                    <div class="footer-icons">
+                        <img class="footer-mtn-icon" src="/Content/images/mountain-footer.svg" alt="Decorative Mountain Icon Image" width="320" height="49" aria-hidden="true" />
+                        <a href="home" class="footer-logo"> <img src="/Content/images/survival-pack-orange-pack-black-logo.svg" alt="Survival Packs" width="310" height="84"></a>
+                    </div>
+                    <nav aria-label="Social media">
+                        <ul class="flex align-self-center footer-social">
+                            <li>
+                                <a href="home"> <img src="/Content/images/facebook.svg" alt="Facebook" width="75" height="75" /></a>
+                            </li>
+                            <li>
+                                <a href="home"> <img src="/Content/images/youtube.svg" alt="Youtube" width="75" height="75" /></a>
+                            </li>
+                            <li>
+                                <a href="home"> <img src="/Content/images/instagram.svg" alt="Instagram" width="75" height="75" /></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div role="form" aria-label="Email Signup">
+                        <form id="email-form" class="text-email-label">
+                            <label for="email">Sign Up With Email For Future Deals</label>
+                            <div >
+                                <input type="email" class="email-style text-form-entry" name="email" id="email" value="Your Email" />
+                                <button class="btn-email-submit text-email-submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <nav  class="footer-nav text-footer-nav" aria-label="footer">
+                        <ul>
+                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#">PRIVACY POLICY</a></li>
+                            <li><a href="#">ACCESSIBILITY</a></li>
+                            <li><a href="#">COMPANY INFO</a></li>
+                            <li><a href="#">SHIPPING INFO</a></li>
+                            <li><a href="home"> <img src="/Content/images/big-bite-icon.svg" alt="Big Bite Warranty" width="310" height="110" /></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <p>&copy; 2023 - David Owens Training Project</p>
+            <p>Do not try to eat your normal backpack.</p>
+        </div>
+    </footer>
+
+    
+    <script src="/Content/js/menu.js"></script>
+</body>
+</html>

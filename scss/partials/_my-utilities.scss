@@ -1,0 +1,97 @@
+﻿@import 'variables';
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.headers {
+    display: block;
+    background-color: $primarycolor;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    min-width:320px;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0;
+
+}
+
+    .text-email-submit {
+        font-size: 20px;
+        color: $lighttext;
+    }
+
+    .text-form-entry {
+        font-size: 20px;
+        color: $textentrygray;
+    }
+
+    .text-footer-nav {
+        font-size: 30px;
+        font-weight: 500;
+        color: $complimentary;
+    }
+
+    .text-email-label {
+        font-size: 25px;
+        color: $complimentary;
+    }
+
+    .text-btn {
+        font-size: 30px;
+        font-weight: 500;
+        color: $lighttext;
+    }
+
+    .text-mobile {
+        font-size: 24px;
+        font-weight: 400;
+        color: $lighttext;
+    }
+
+    .text-headline {
+        color: $lighttext;
+        font-size: 55px;
+        font-weight: 700;
+        line-height: .8;
+    }
+
+    .text-sub {
+        font-size: 35px;
+        font-weight: 600;
+        line-height: .9;
+        color: $secondarytext;
+    }
+
+    .text-sub-h2 {
+        font-size: 35px;
+        font-weight: 600;
+        color: $complimentary;
+    }
+
+    .text-story {
+        line-height: 1.5;
+        font-weight: 400;
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+
+
+    .text-primary {
+        color: $primarycolor;
+    }
+
+
+

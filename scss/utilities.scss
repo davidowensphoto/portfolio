@@ -1,0 +1,489 @@
+﻿@mixin modifiers( $map, $attribute, $prefix: '.', $separator: '-', $base: 'base' ) {
+    @each $key, $value in $map {
+        @at-root {
+            #{&}#{if($key != $base, #{$prefix}#{$key}, '') } {
+                @if type-of($value) == 'map' {
+                    @include modifiers($value, $attribute, $separator);
+                }
+                @else {
+                    #{$attribute}: $value;
+                }
+            }
+        }
+    }
+}
+
+$border-style: ( none: none, hidden: hidden, dotted: dotted, dashed: dashed, solid: solid, double: double, inset: inset, outset: outset, initial: initial, inherit: inherit );
+
+$colors: ( grey: ( x-dark: #333, dark: #666, medium: #ccc, light: #eee, x-light: #f9f9f9 ), blue: ( light: #ebecfd, medium: #1c23a5, dark: #1a1d5e ), green: ( light: #edfaed, dark: #008000 ), yellow: ( light: #fdf6e5, medium: #ffc930, dark: #eeb207 ), red: ( light: #fff5f5, dark: #c00 ), black: #000, white: #fff );
+
+$displays: ( block: block, inline: inline, inline-block: inline-block, inline-flex: inline-flex, is-hidden: none, flex: flex );
+
+$directions: ( row: row, row-reverse: row-reverse, column: column, column-reverse: column-reverse );
+
+$floats: (left, none, right);
+
+$font-style: ( normal: normal, italic: italic, initial: initial, inherit: inherit );
+
+$font-weight: ( regular: 400, bold: 700, x-bold: 900 );
+
+$patterns: (inline, square, squish, stack, stretch);
+
+$resolutions: ( s: 576px, m: 768px, l: 992px, xl: 1200px );
+
+$sides: (top, right, bottom, left, all);
+
+$sizes: ( none: 0, light: 1px, regular: 2px, heavy: 4px );
+
+$spaceamounts: ( none: 0, xs: 4px, s: 8px, m: 16px, l: 32px, xl: 64px, xxl: 128px );
+
+$text-align: ( left: left, center: center, right: right );
+
+$transformValues: ( capitalize: capitalize, uppercase: uppercase, lowercase: lowercase );
+
+$wrap: ( nowrap: nowrap, wrap: wrap, wrap-reverse: wrap-reverse );
+
+@each $key, $value in $resolutions {
+    @media (min-width: $value) {
+        .is-hidden-#{$key} {
+            display: none !important;
+        }
+
+        .block-#{$key} {
+            display: block !important;
+        }
+
+        .inline-block-#{$key} {
+            display: inline-block !important;
+        }
+
+        .float {
+            @each $float in $floats {
+                &-#{$float}-#{$key} {
+                    float: $float;
+                }
+            }
+        }
+    }
+}
+
+.bg {
+    @include modifiers($colors, 'background-color', $prefix: '-');
+}
+
+@each $key, $value in $colors {
+    @if type-of($value) == 'map' {
+        @each $color in $value {
+            .border-#{'' + $key}-#{nth($color, 1)} {
+                border: 1px solid #{nth($color, 2)};
+            }
+        }
+    }
+    @else {
+        .border-#{'' + $key} {
+            border: 1px solid $value;
+        }
+    }
+}
+
+.border {
+    &-none {
+        border: 0;
+    }
+
+    &-top-none {
+        border-width: 0 1px 1px;
+    }
+
+    &-right-none {
+        border-width: 1px 0 1px 1px;
+    }
+
+    &-bottom-none {
+        border-width: 1px 1px 0;
+    }
+
+    &-left-none {
+        border-width: 1px 1px 1px 0;
+    }
+
+    &-top {
+        border-width: 1px 0 0;
+    }
+
+    &-right {
+        border-width: 0 1px 0 0;
+    }
+
+    &-bottom {
+        border-width: 0 0 1px;
+    }
+
+    &-left {
+        border-width: 0 0 0 1px;
+    }
+
+    &-rounded {
+        border-radius: 4px;
+    }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+}
+
+@include modifiers($displays, 'display');
+
+.flex {
+    @include modifiers($directions, 'flex-direction', $prefix: '-');
+    @include modifiers($wrap, 'flex-wrap', $prefix: '-');
+
+    &-grow-0 {
+        flex-grow: 0;
+    }
+
+    &-grow-1 {
+        flex-grow: 1;
+    }
+
+    &-shrink-0 {
+        flex-shrink: 0;
+    }
+
+    &-shrink-1 {
+        flex-shrink: 1;
+    }
+
+    &-basis-a {
+        flex-basis: auto;
+    }
+
+    &-basis-0 {
+        flex-basis: 0;
+    }
+}
+
+.float {
+    @each $float in $floats {
+        &-#{$float} {
+            float: $float;
+        }
+    }
+}
+
+.position {
+    &-relative {
+        position: relative;
+    }
+
+    &-absolute {
+        position: absolute;
+    }
+}
+
+.justify {
+    &-content-start {
+        justify-content: flex-start;
+    }
+
+    &-content-end {
+        justify-content: flex-end;
+    }
+
+    &-content-center {
+        justify-content: center;
+    }
+
+    &-content-space-around {
+        justify-content: space-around;
+    }
+
+    &-content-space-between {
+        justify-content: space-between;
+    }
+}
+
+.align {
+    &-items-start {
+        align-items: flex-start;
+    }
+
+    &-items-center {
+        align-items: center;
+    }
+
+    &-items-end {
+        align-items: flex-end;
+    }
+
+    &-items-stretch {
+        align-items: stretch;
+    }
+
+    &-items-baseline {
+        align-items: baseline;
+    }
+
+    &-self-auto {
+        align-self: auto;
+    }
+
+    &-self-start {
+        align-self: flex-start;
+    }
+
+    &-self-center {
+        align-self: center;
+    }
+
+    &-self-end {
+        align-self: flex-end;
+    }
+
+    &-self-stretch {
+        align-self: stretch;
+    }
+
+    &-self-baseline {
+        align-self: baseline;
+    }
+}
+
+@for $i from 1 through length($patterns) {
+    $pattern: nth($patterns, $i);
+
+    @for $i from 1 through length($spaceamounts) {
+        $spaceamount: nth($spaceamounts, $i);
+
+        @if $pattern== 'square' {
+            .inset-#{$pattern}-#{nth($spaceamount, 1)} {
+                padding: #{nth($spaceamount, 2)};
+            }
+        }
+
+        @if $pattern== 'stack' {
+            .#{$pattern}-#{nth($spaceamount, 1)} {
+                margin: 0 0 #{nth($spaceamount, 2)};
+            }
+        }
+
+        @if $pattern== 'inline' {
+            .#{$pattern}-#{nth($spaceamount, 1)} {
+                margin: 0 #{nth($spaceamount, 2)} 0 0;
+            }
+        }
+    }
+}
+
+.inset {
+    &-squish {
+        &-s {
+            padding: map-get($map: $spaceamounts, $key: xs) map-get($map: $spaceamounts, $key: s);
+        }
+
+        &-m {
+            padding: map-get($map: $spaceamounts, $key: s) map-get($map: $spaceamounts, $key: m);
+        }
+
+        &-l {
+            padding: map-get($map: $spaceamounts, $key: m) map-get($map: $spaceamounts, $key: l);
+        }
+
+        &-xl {
+            padding: map-get($map: $spaceamounts, $key: l) map-get($map: $spaceamounts, $key: xl);
+        }
+
+        &-xxl {
+            padding: map-get($map: $spaceamounts, $key: xl) map-get($map: $spaceamounts, $key: xxl);
+        }
+    }
+
+    &-stretch {
+        &-xs {
+            padding: map-get($map: $spaceamounts, $key: s) map-get($map: $spaceamounts, $key: xs);
+        }
+
+        &-s {
+            padding: map-get($map: $spaceamounts, $key: m) map-get($map: $spaceamounts, $key: s);
+        }
+
+        &-m {
+            padding: map-get($map: $spaceamounts, $key: l) map-get($map: $spaceamounts, $key: m);
+        }
+
+        &-l {
+            padding: map-get($map: $spaceamounts, $key: xl) map-get($map: $spaceamounts, $key: l);
+        }
+
+        &-xl {
+            padding: map-get($map: $spaceamounts, $key: xxl) map-get($map: $spaceamounts, $key: xl);
+        }
+    }
+}
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        @if $side== 'all' {
+            .margin-#{nth($space, 1)} {
+                margin: #{nth($space, 2)};
+            }
+
+            .padding-#{nth($space, 1)} {
+                padding: #{nth($space, 2)};
+            }
+        }
+        @else {
+            .margin-#{nth($side, 1)}-#{nth($space, 1)} {
+                margin-#{$side}: #{nth($space, 2)};
+            }
+
+            .padding-#{nth($side, 1)}-#{nth($space, 1)} {
+                padding-#{$side}: #{nth($space, 2)};
+            }
+        }
+    }
+}
+
+@each $side in $sides {
+    @if $side== 'all' {
+        .margin-auto {
+            margin: auto;
+        }
+    }
+    @else {
+        .margin-#{nth($side, 1)}-auto {
+            margin-#{$side}: auto;
+        }
+    }
+}
+
+.text {
+    @include modifiers($text-align, 'text-align', $prefix: '-');
+    @include modifiers($transformValues, 'text-transform', $prefix: '-');
+    @include modifiers($font-style, 'font-style', $prefix: '-');
+    @include modifiers($font-weight, 'font-weight', $prefix: '-');
+    @include modifiers($colors, 'color', $prefix: '-');
+
+    &-s {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &-m {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &-l {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &-xl {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &-2xl {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    &-3xl {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    &-4xl {
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    &-transform-none {
+        text-transform: none;
+    }
+
+    &-nowrap {
+        white-space: nowrap;
+    }
+
+    &-strikethrough {
+        text-decoration: line-through;
+    }
+
+    &-decoration-underline {
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &-decoration-none {
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+.clearfix {
+    &:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.visibility-auto {
+    content-visibility: auto;
+}
+
+.intrinsic-500 {
+    contain-intrinsic-size: 0 500px;
+}
+
+.intrinsic-250 {
+    contain-intrinsic-size: 0 250px;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.width-85 {
+    width: 85%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.border-radius-s {
+    border-radius: 4px;
+}

@@ -1,0 +1,242 @@
+﻿/*/// <reference path="./variables.scss" />*/
+@import 'variables';
+
+.btn-remove {
+    background-color: $backgroundwhite;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.btn-image {
+    width: 10px;
+    height: 10px;
+
+    @media (min-width: 730px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+    .btn-add {
+        background: white;
+        border: none;
+    }
+
+    .btn-subtract {
+        background: white;
+        border: none;
+    }
+
+
+    .btn-checkout {
+        display: block;
+        background-color: $primarycolor;
+        padding: 2px 8px;
+        text-align: center;
+        width: 225px;
+        border-radius: 25px;
+        margin: auto;
+        border: none;
+        margin-top: 12px;
+        cursor: pointer;
+
+        @media (min-width: 730px) {
+            margin-top: 30px;
+        }
+    }
+
+    .cart-total {
+        text-align: right;
+        font-size: 25px;
+        font-weight: 400;
+        color: $complimentary;
+        gap: 4px;
+        margin: 8px 10px 0 0;
+
+        @media (min-width: 730px) {
+            font-size: 40px;
+            margin: 18px 32px 0 0;
+        }
+    }
+
+    .cart-hero {
+        width: 48px;
+        height: 80px;
+        margin-right: 10px;
+
+        @media (min-width: 730px) {
+            width: 90px;
+            height: 150px;
+        }
+    }
+
+    .cart-math {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        gap: 4px;
+        border: 1px solid black;
+        border-radius: 18px;
+        padding-top: 2px;
+        width: 100px;
+        margin-top: 8px;
+    }
+
+    .empty-cart {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+
+        @media (min-width: 730px) {
+            width: 400px;
+            height: 400px;
+        }
+
+        &-display {
+            display: none;
+            margin-top: 20px;
+            width: 310px;
+
+            @media (min-width: 730px) {
+                width: 710px;
+            }
+        }
+    }
+
+
+    .header {
+        display: block;
+        background-color: $primarycolor;
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        min-width: 320px;
+
+        @media (min-width: 730px) {
+            height: 70px;
+        }
+    }
+
+    .l-cart-header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: flex-start;
+        gap: 15px;
+        width: 240px;
+
+        @media (min-width: 730px) {
+            width: 495px;
+        }
+    }
+
+    .l-cart-entries {
+        margin-top: 15px;
+        width: 310px;
+
+        @media (min-width: 730px) {
+            width: 720px;
+            margin-top: 35px;
+        }
+    }
+
+    .l-hero-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .l-cart {
+        width: 310px;
+        margin: auto;
+        margin-bottom: 20px;
+        min-height: 300px;
+
+        @media (min-width: 730px) {
+            width: 720px;
+            min-height: 550px;
+        }
+    }
+
+    .l-subtotal {
+        margin-right: 8px;
+    }
+
+    .product-amount {
+        width: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        border: none;
+    }
+
+    .remove-1, .remove-2 {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        width: 70px;
+        justify-content: flex-start;
+        cursor: pointer;
+        margin: 8px 0 12px 0;
+
+        @media (min-width: 730px) {
+            width: 100px;
+            height: 30px;
+        }
+    }
+
+    .text-cart-h2 {
+        display: block;
+        font-size: 25px;
+        font-weight: 600;
+        color: $complimentary;
+        letter-spacing: normal;
+        padding: 0;
+        margin: 0;
+        line-height: 25px;
+
+        @media (min-width: 730px) {
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+
+    .text-remove {
+        padding-top: 1px;
+        font-size: 15px;
+        font-weight: 300;
+        text-decoration: underline;
+        text-decoration-color: $primarycolor;
+
+        @media (min-width: 730px) {
+            font-size: 25px;
+        }
+    }
+
+    .text-prod-total {
+        display: block;
+        font-size: 25px;
+        font-weight: 400;
+        color: $complimentary;
+        letter-spacing: normal;
+        line-height: 25px;
+
+
+        @media (min-width: 730px) {
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+
+    .text-cart-h1 {
+        font-size: 35px;
+
+        @media (min-width: 730px) {
+            font-size: 50px;
+            padding-top: 10px;
+        }
+    }

@@ -1,0 +1,251 @@
+/*/// <reference path="./variables.scss" />*/
+body {
+  background-image: url("/Content/images/topo.svg");
+  background-position: top;
+}
+
+.btn-main-desktop {
+  display: none;
+}
+@media (min-width: 730px) {
+  .btn-main-desktop {
+    display: block;
+    background-color: #F05A27;
+    padding: 2px 8px;
+    text-align: center;
+    width: 225px;
+    margin-top: 12px;
+    border-radius: 25px;
+  }
+}
+
+.btn-more-stories {
+  background-color: #F05A27;
+  text-align: center;
+  width: 250px;
+  margin: 15px 0;
+  border-radius: 25px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.btn-story {
+  display: none;
+}
+@media (min-width: 730px) {
+  .btn-story {
+    display: block;
+    margin-top: 18px;
+    width: 230px;
+    background-color: #F05A27;
+    padding: 4px 0 0 18px;
+    border: none;
+    border-radius: 20px;
+  }
+}
+
+.l-main-block {
+  position: relative;
+}
+@media (min-width: 730px) {
+  .l-main-block {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 14px 0 8px;
+    background-color: #513015;
+    border-radius: 25px 25px 0 0;
+    height: 325px;
+    cursor: pointer;
+  }
+}
+
+.l-home-content {
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 730px) {
+  .l-home-content {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 730px) {
+  .l-home-cat {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 0;
+  }
+}
+.l-home-cat li {
+  cursor: pointer;
+}
+
+@media (min-width: 730px) {
+  .l-story-large {
+    display: flex;
+    margin-top: 8px;
+    gap: 12px;
+    align-content: space-between;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.main-image {
+  margin-top: 10px;
+}
+@media (min-width: 730px) {
+  .main-image {
+    margin: 0;
+    width: 400px;
+    height: 325px;
+    border-radius: 0 25px 0 0;
+  }
+}
+
+.main-block-text1 {
+  position: absolute;
+  top: 15px;
+  height: 45px;
+  left: 0;
+  padding: 10px;
+  width: 125px;
+  border-radius: 0 25px 25px 0;
+}
+
+.main-block-text2 {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  padding: 5px 10px 5px 20px;
+  width: 270px;
+  border-radius: 25px 0 0 25px;
+  background-color: #F05A27;
+}
+
+.main-block-desktop-left {
+  display: none;
+}
+@media (min-width: 730px) {
+  .main-block-desktop-left {
+    display: block;
+    margin: auto 12px auto 24px;
+    min-width: 250px;
+    max-width: 400px;
+  }
+}
+
+.main-large-headline {
+  display: none;
+}
+@media (min-width: 730px) {
+  .main-large-headline {
+    display: block;
+  }
+}
+
+.main-large-sub {
+  display: none;
+}
+@media (min-width: 730px) {
+  .main-large-sub {
+    display: block;
+    margin-top: 12px;
+  }
+}
+
+.main-cat-image {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 730px) {
+  .main-cat-image img {
+    width: 350px;
+    height: 290px;
+  }
+}
+
+.main-cat-block {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+}
+
+@media (min-width: 730px) {
+  .main-mobile-text {
+    display: none;
+  }
+}
+
+.main-story-image {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 730px) {
+  .main-story-img {
+    width: 442px;
+    height: 368px;
+    border-radius: 0 0 0 25px;
+  }
+}
+
+.main-story {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  line-height: 95%;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: left;
+  background-color: #000000;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+@media (min-width: 730px) {
+  .main-story {
+    position: relative;
+    display: block;
+    bottom: 0;
+    line-height: 100%;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 500;
+    background-color: #D3D3D3;
+    padding: 20px 20px 0;
+    height: 368px;
+    box-sizing: border-box;
+    width: 442px;
+    border-radius: 0 0 25px 0;
+  }
+}
+
+.main-stories-text {
+  display: none;
+}
+@media (min-width: 730px) {
+  .main-stories-text {
+    margin-top: 8px;
+    max-width: 450px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+@media (min-width: 830px) {
+  .main-stories-text {
+    -webkit-line-clamp: 6;
+  }
+}
+
+/*@import "partials/variables";*/
+/*# sourceMappingURL=maps/home.css.map */

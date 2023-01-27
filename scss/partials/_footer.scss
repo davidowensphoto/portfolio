@@ -1,0 +1,83 @@
+﻿@import 'variables';
+
+.btn-email-submit {
+    background-color: $complimentary;
+    padding: 0 10px 0 8px;
+    border-radius: 0 20px 20px 0;
+    border-style: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+.email-style {
+
+    padding-left: 20px;
+    border-radius: 20px 0 0 20px;
+    border-style: solid;
+    border-color: $complimentary;
+    height: 31px;
+}
+
+.l-footer {
+    width: 320px;
+    display: block;
+    margin: auto;
+
+    @media (min-width: 730px) {
+        max-width: 900px;
+        display: block;
+        margin: auto;
+    }
+}
+
+ .footer-align {
+        text-align: center;
+    }
+
+.footer-icons {
+    display: block;
+
+    @media (min-width: 730px) {
+        width: 310px;
+    }
+}
+
+.footer-logo {
+    cursor: pointer;
+}
+
+.footer-mtn-icon {
+        width: auto;
+        margin-top: 10px;
+    }
+
+.footer-nav {
+    margin-top: 10px;
+
+    & li {
+        cursor: pointer;
+    }
+}
+
+.footer-social {
+    justify-content: center;
+    
+}
+
+.footer-social li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.l-footer-expanded {
+        @media (min-width: 730px) {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+
+.l-footer-space {
+    margin-top: 18px;
+}
