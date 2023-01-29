@@ -1,6 +1,6 @@
 /*/// <reference path="./variables.scss" />*/
 body {
-  background-image: url("/Content/images/topo.svg");
+  background-image: url("https://davidowensphoto.github.io/portfolio/content/images/topo-01.svg");
   background-position: top;
 }
 
