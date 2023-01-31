@@ -1,0 +1,49 @@
+.portfolio-card {
+    display: block;
+    width: 320px;
+    border-color: black;
+    border-radius: 8px;
+    border: solid;
+    padding: 16px 8px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.portfolio-card img {
+width: 320px;
+height: 240px;
+
+}
+
+.portfolio-card:hover {
+
+    border-color: orange;
+    color: gray;
+}
+
+.l-portfolio {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.l-work {
+    width: 80%;
+    margin: 0 auto 36px;
+    display: block;
+}
+
+.l-work h1 {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    color: #F87431;
+}
+
+
+.text-work-main {
+    line-height: 1.5;
+    font-weight: 200;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+  }

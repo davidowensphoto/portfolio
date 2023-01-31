@@ -35,9 +35,7 @@ a {
   all: unset;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
-}
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -378,7 +376,78 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
 }
 
+
 .text-primary {
   color: #F05A27;
 }
-/*# sourceMappingURL=maps/styles.css.map */
+
+
+.header-layout {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 1000px) {
+  .header-layout {
+   display: block;
+   width: 100%;
+  }
+
+}
+
+.l-nav {
+  display: flex;
+  font-size: 50px;
+  gap: 36px;
+}
+@media (max-width: 1000px) {
+  .l-nav {
+  justify-content: center;
+    font-size: 35px;
+    gap: 30px;
+  }
+  }
+
+
+
+
+.l-nav a:hover {
+  color: gray;
+}
+
+.main-layout {
+  width: 80%;
+  margin: auto;
+}
+
+
+.name {
+  font-size: 100px;
+  display: block;
+}
+@media (max-width: 1000px) {
+  .name {
+    font-size: 70px;
+
+    background: black;
+    color: white;
+    text-align: center;
+   
+  }
+}
+
+.l-main-footer{
+  height: auto;
+  width: 80%;
+  margin: auto;
+  font-size: 35px;
+  padding: 16px 0;
+}
+
+.l-main-footer li {
+  display: block;
+}
