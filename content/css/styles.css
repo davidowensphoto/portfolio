@@ -389,6 +389,7 @@ input::-webkit-inner-spin-button {
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
+
 }
 
 @media (max-width: 1000px) {
@@ -446,6 +447,7 @@ input::-webkit-inner-spin-button {
   margin: auto;
   font-size: 35px;
   padding: 16px 0;
+  margin-bottom: 24px;
 }
 
 .l-main-footer li {

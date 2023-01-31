@@ -40,10 +40,40 @@ height: 240px;
     color: #F87431;
 }
 
+@media (max-width: 1000px) {
+    .l-work h1 {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        color: #F87431;
+    }
+}
+
 
 .text-work-main {
     line-height: 1.5;
     font-weight: 200;
     font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 40px;
+  }
+
+  .portfolio-frame {
+    display: block;
+    margin: auto;
+  }
+
+  @media (max-width: 1000px) {
+
+    .portfolio-frame {
+       width: 600px;
+    height: 450px;
+      }
+  }
+
+  @media (max-width: 500px) {
+
+    .portfolio-frame {
+       width: 250px;
+    
+      }
   }
