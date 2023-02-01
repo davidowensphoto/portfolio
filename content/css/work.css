@@ -5,7 +5,7 @@
     border-radius: 8px;
     border: solid;
     padding: 16px 8px;
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -89,4 +89,9 @@ color: #000;
 
     .l-work-sections-b {
         max-width: 1000px;
+    }
+    
+    .ux-img {
+        margin: 0 auto 40px;
+        display: block;
     }
