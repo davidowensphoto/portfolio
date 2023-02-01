@@ -1,6 +1,6 @@
 .portfolio-card {
     display: block;
-    width: 320px;
+    width: calc(24%-14px);
     border-color: black;
     border-radius: 8px;
     border: solid;
@@ -10,10 +10,14 @@
 }
 
 .portfolio-card img {
-width: 320px;
+width: 300px;
 height: 240px;
-
+display: block;
 }
+
+
+
+
 
 .portfolio-card:hover {
 
@@ -25,6 +29,7 @@ height: 240px;
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .l-work {
@@ -35,20 +40,26 @@ height: 240px;
 
 .l-work h1 {
     font-family: Arial, Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 300;
     color: #F87431;
+    text-align: center;
 }
 
-@media (max-width: 1000px) {
-    .l-work h1 {
-        font-family: Arial, Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        font-weight: 300;
-        color: #F87431;
-    }
+.l-work h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #000;
+    
 }
 
+.l-work p {
+    color: #000;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 1000px;
+}
 
 .text-work-main {
     line-height: 1.5;
@@ -57,23 +68,25 @@ height: 240px;
     font-size: 40px;
   }
 
-  .portfolio-frame {
-    display: block;
-    margin: auto;
-  }
+.l-work-sections {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
 
-  @media (max-width: 1000px) {
+}
 
-    .portfolio-frame {
-       width: 600px;
-    height: 450px;
-      }
-  }
+.l-work-sections h3 {
+color: #000;
 
-  @media (max-width: 500px) {
+}
 
-    .portfolio-frame {
-       width: 250px;
-    
-      }
-  }
+.l-work-sections p {
+    color: #000;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+   
+    }
+
+    .l-work-sections-b {
+        max-width: 1000px;
+    }

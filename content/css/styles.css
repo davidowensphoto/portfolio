@@ -387,7 +387,7 @@ input::-webkit-inner-spin-button {
   margin: auto;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   gap: 40px;
 
 }
@@ -452,4 +452,9 @@ input::-webkit-inner-spin-button {
 
 .l-main-footer li {
   display: block;
+}
+
+.l-main-footer li span {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-size: 32px;
 }
