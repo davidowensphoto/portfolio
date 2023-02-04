@@ -3,7 +3,7 @@
 }
 
 a:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 h1 {

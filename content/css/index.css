@@ -1,7 +1,21 @@
 
-.text-story-main {
+.text-story-main p {
     line-height: 1.5;
     font-weight: 400;
     font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 40px;
+  }
+
+
+
+  .text-story-main p:nth-child(3) {
+    color: #F05A27;
+  }
+
+
+  @media (max-width: 1000px) {
+    .text-story-main p {
+      font-size: 24px;
+    }
+
   }

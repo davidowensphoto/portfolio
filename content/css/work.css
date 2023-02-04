@@ -66,6 +66,7 @@ display: block;
     font-weight: 200;
     font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 40px;
+    margin-bottom: 16px;
   }
 
 .l-work-sections {
@@ -94,4 +95,5 @@ color: #000;
     .ux-img {
         margin: 0 auto 40px;
         display: block;
+        width: 80%;
     }
