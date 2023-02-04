@@ -1,0 +1,73 @@
+.l-resume {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.l-resume h1 {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #F87431;
+    text-align: left;
+}
+
+
+
+.l-resume h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #F87431;
+    
+}
+.l-resume h3 {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+
+    font-size: 28px;
+    font-weight: 300;
+    color: #000;
+    
+}
+.l-resume h4 {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #F87431;
+    
+}
+
+.l-resume li {
+    color: #000;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+   
+}
+
+
+.job ul {
+    padding-left: 32px;
+}
+.job ul li:before  {
+    
+      
+        content: '\2014';
+        position: absolute;
+        margin-left: -28px;
+   
+
+}
+
+.skills {
+display: flex;
+flex-wrap: wrap;
+
+}
+
+
+.skills li {
+    width: 260px;
+    display: inline-block;
+    font-size: 16px;
+}
