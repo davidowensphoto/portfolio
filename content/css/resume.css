@@ -2,9 +2,6 @@
     width: 80%;
     margin: auto;
 }
-
-
-
 .l-resume h1 {
     font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 48px;
@@ -12,9 +9,6 @@
     color: #F87431;
     text-align: left;
 }
-
-
-
 .l-resume h2 {
     font-size: 40px;
     font-weight: 300;
@@ -36,38 +30,84 @@
     color: #F87431;
     
 }
-
 .l-resume li {
     color: #000;
     font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-   
 }
+
+.l-resume p {
+    color: #000;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
 
 .job ul {
     padding-left: 32px;
 }
 .job ul li:before  {
-    
-      
-        content: '\2014';
+            content: '\2014';
         position: absolute;
         margin-left: -28px;
-   
-
 }
-
 .skills {
 display: flex;
 flex-wrap: wrap;
 
 }
-
-
 .skills li {
-    width: 260px;
+    width: 240px;
     display: inline-block;
     font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+    .skills li {
+        width: 200px;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .l-resume h1 {
+        font-size: 32px;
+    }
+        .l-resume h2 {
+        font-size: 24px;
+    }
+    .l-resume h3 {
+        font-size: 16px;   
+    }
+    .l-resume h4 {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: #F87431;
+    }
+
+    .l-resume img {
+        width: 100%;
+        height: auto;
+    }
+    .l-resume li {
+        color: #000;
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .l-resume p {
+    
+        font-size: 12px;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 500px) {
+    .skills li {
+        width: 140px;
+        font-size: 10px;
+        line-height: 1.2;
+    }
 }
