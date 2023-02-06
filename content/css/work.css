@@ -43,12 +43,15 @@ padding-bottom: 16px;
     display: block;
 }
 
+
+
 .l-work h1 {
     font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 48px;
     font-weight: 300;
     color: #F87431;
     text-align: center;
+    margin-top: 16px;
 }
 
 .l-work h2 {
@@ -65,6 +68,7 @@ padding-bottom: 16px;
     line-height: 1.5;
     max-width: 80%;
 }
+
 
 .text-work-main {
     line-height: 1.5;
