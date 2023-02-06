@@ -76,14 +76,15 @@ flex-wrap: wrap;
     }
         .l-resume h2 {
         font-size: 24px;
+        font-weight: 500;
     }
     .l-resume h3 {
-        font-size: 16px;   
+        font-size: 18px;   
     }
     .l-resume h4 {
         font-family: Arial, Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 500;
         color: #F87431;
     }
 
@@ -99,7 +100,7 @@ flex-wrap: wrap;
     }
     .l-resume p {
     
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.8;
     }
 }
