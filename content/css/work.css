@@ -39,7 +39,7 @@ padding-bottom: 16px;
 
 .l-work {
     width: 80%;
-    margin: 0 auto 36px;
+    margin: 8px auto 36px;
     display: block;
 }
 
@@ -101,4 +101,24 @@ color: #000;
         margin: 0 auto 40px;
         display: block;
         width: 70%;
+    }
+
+    @media (max-width: 500px) {
+        .l-work p {
+            max-width: 100%;
+        }
+        .l-work-sections-a img {
+            width: 24px;
+            height: auto;
+            padding-top: 8px;
+        }
+        .l-work-sections-b p {
+           font-size: 12px;
+            line-height: 1.8;
+        }
+        .ux-img {
+            margin: 0 auto 20px;
+            width: 100%;
+        }
+
     }
